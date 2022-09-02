@@ -4,7 +4,7 @@ from django.db import models
 
 # Create your models here.
 class Document(models.Model):
-    documentName = models.CharField(max_length=100, unique=True)
+    documentName = models.CharField(max_length=100)
     
     def __str__(self):
         return self.documentName
